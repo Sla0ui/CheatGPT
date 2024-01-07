@@ -1,0 +1,11 @@
+{
+  "manifest_name": {
+    "message": "AdBlocker"
+  },
+  "manifest_description": {
+    "message": "Show AdBlocker in popup window. This extension doens't have any JS code - it's safe to use."
+  },
+  "manifest_title": {
+    "message": "AdBlocker in Popup window"
+  }
+}

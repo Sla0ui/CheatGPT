@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+
+  "name": "__MSG_manifest_name__",
+  "version": "0.1",
+  "description": "__MSG_manifest_description__",
+  "icons": { "192": "icon.png" },
+  "default_locale": "en",
+
+  "action": {
+    "default_icon": "icon.png",
+    "default_title": "__MSG_manifest_title__",
+    "default_popup": "popup.html"
+  },
+
+  "permissions": [
+    "declarativeNetRequest",
+    "storage",
+    "activeTab"
+  ],
+
+  "host_permissions": [
+    "*://*.openai.com/*"
+  ],
+
+  "declarative_net_request" : {
+    "rule_resources" : [{
+      "id": "manifest-rule-1",
+      "enabled": true,
+      "path": "manifest-rule-1.json"
+    }]
+  }
+
+}

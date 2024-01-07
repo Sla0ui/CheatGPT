@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+  <title> AdBlocker </title>
+
+  <style type=text/css>
+    body {
+      width : 690px !important;
+      height: 560px !important;
+      margin: 0px;
+      overflow:hidden;
+    }
+    iframe {
+      position: fixed;
+      height: calc(100vh / 0.9);
+      width : calc(100vw / 0.9);
+      left  : calc(100%  * (1 - 1/0.9) / 2);
+      top   : calc(100%  * (1 - 1/0.9) / 2);
+      transform: scale( 0.9 );
+      border: none;
+      _margin: 0 40px 40px 0;
+    }
+    overlay {
+      display: block;
+      height :100%;
+      width  :100%;
+      background: black;
+      opacity: 0.05;
+      pointer-events: none;
+    }
+  </style>
+
+<body>
+  <iframe id="frame" src="https://chat.openai.com/"> </iframe>
+  <div class="overlay"></div>
+</body>
+
+</html>
